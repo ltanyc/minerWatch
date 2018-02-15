@@ -1,0 +1,14 @@
+{
+  "name": "minerwatch",
+  "version": "0.0.2",
+  "description": "Consume iquidus explorer api and keep track of mining reward wallets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lta",
+  "license": "GPLv3",
+  "dependencies": {
+    "requestretry": "^1.13.0"
+  }
+}
