@@ -9,7 +9,7 @@ const request = require('requestretry').defaults({
 	fullResponse: false,
 });
 const BLOCKREWARD = 10000;
-var lookback = process.argv[2];
+var lookback = parseInt(process.argv[2]);
 if (lookback == null || lookback < 1 || lookback > 1440) {
 	lookback = 10;
 	console.error('Lookback set to ' + lookback + ' min');
