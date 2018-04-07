@@ -1,5 +1,5 @@
 # minerWatch
-To infer a pool's proportion of the network, we consume iquidus explorer api and keep track of mining rewards per wallet over a timeframe.
+To infer a pool's proportion of the network, we consume iquidus explorer api and keep track of New York Coin mining rewards per wallet over a timeframe.
 
 # Installing
 git clone https://github.com/ltanyc/minerWatch.git && cd minerWatch && npm install

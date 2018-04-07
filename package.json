@@ -9,6 +9,7 @@
   "author": "lta",
   "license": "GPLv3",
   "dependencies": {
+    "npm": "^6.0.0",
     "requestretry": "^1.13.0"
   }
 }

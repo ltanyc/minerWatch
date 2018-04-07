@@ -10,7 +10,7 @@ const request = require('requestretry').defaults({
 });
 const BLOCKREWARD = 10000;
 var lookback = parseInt(process.argv[2]);
-if (lookback == null || lookback < 1 || lookback > 1440) {
+if (process.argv[2] == null || lookback < 1 || lookback > 1440) {
 	lookback = 10;
 	console.error('Lookback set to ' + lookback + ' min');
 }
@@ -23,6 +23,7 @@ addr2name['RVcmwoMpMrNppQeCrKWnZkzwX8ubdpGZYo']  = 'https://newyorkcoinpool.com/
 addr2name['RB8trkrKbXQ8AaRhnUxcdBNnc4swCynRDF']  = 'https://www.mining-dutch.nl/pools/newyorkcoin.php';
 addr2name['RMR7DfZEBPDyXd1rCbARAK7YQMMSPByz79']  = 'http://nyc.mypool.club/';
 addr2name['RGZ2JZEFsRgEqngQn4vUYi2mPydMWygPdX']  = 'http://www.zpool.ca';
+addr2name['RMkqWYHQuN9a4XsrP3CgHnmpnaUvcSp95p']  = 'https://pool.gigarho.com/site/block?id=578';
 
 function apiReq(endpoint, arg) {
 	if (arg == null)
