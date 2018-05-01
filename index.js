@@ -16,14 +16,15 @@ if (process.argv[2] == null || lookback < 1 || lookback > 1440) {
 }
 
 var addr2name = new Object();
-addr2name['RXDXVzfB7sEThmtLqpzS8QnKzc6MT4rDQa']  = 'https://prohashing.com/';
-addr2name['RQrGu6KtsYMbH6cRNiQdnLcy4meofzAWHS']  = 'https://newyorkcoin.mastermining.net';
-addr2name['RNra5LWEinBh7uikkSZxRuRg114PUbeqSL']  = 'https://hobbyistpool.ddns.net/nyc';
-addr2name['RVcmwoMpMrNppQeCrKWnZkzwX8ubdpGZYo']  = 'https://newyorkcoinpool.com/';
-addr2name['RB8trkrKbXQ8AaRhnUxcdBNnc4swCynRDF']  = 'https://www.mining-dutch.nl/pools/newyorkcoin.php';
-addr2name['RMR7DfZEBPDyXd1rCbARAK7YQMMSPByz79']  = 'http://nyc.mypool.club/';
-addr2name['RGZ2JZEFsRgEqngQn4vUYi2mPydMWygPdX']  = 'http://www.zpool.ca';
-addr2name['RMkqWYHQuN9a4XsrP3CgHnmpnaUvcSp95p']  = 'https://pool.gigarho.com/site/block?id=578';
+addr2name['RMNdYUXmTr1LhBT9qKvg48ic73QKAwFY11'] = addr2name['RXDXVzfB7sEThmtLqpzS8QnKzc6MT4rDQa']  = 'prohashing.com';
+addr2name['RAhEUbJsfzcBJjdqdECoQ7EXawzYubFTuB'] = addr2name['RNra5LWEinBh7uikkSZxRuRg114PUbeqSL']  = 'https://hobbyistpool.ddns.net/nyc Developer Pool';
+addr2name['RBbZPTntFix1cHxm7PxtgeKaKyqZbN5KvJ'] = addr2name['RMR7DfZEBPDyXd1rCbARAK7YQMMSPByz79']  = 'nyc.mypool.club';
+addr2name['RQrGu6KtsYMbH6cRNiQdnLcy4meofzAWHS']  = 'mastermining.net';
+addr2name['RB8trkrKbXQ8AaRhnUxcdBNnc4swCynRDF']  = 'mining-dutch.nl';
+addr2name['RGZ2JZEFsRgEqngQn4vUYi2mPydMWygPdX']  = 'zpool.ca';
+addr2name['RMkqWYHQuN9a4XsrP3CgHnmpnaUvcSp95p']  = 'gigarho.com';
+addr2name['RMR7DfZEBPDyXd1rCbARAK7YQMMSPByz79']  = 'nyc.mypool.club';
+addr2name['RVcmwoMpMrNppQeCrKWnZkzwX8ubdpGZYo']  = 'newyorkcoinpool.com';
 
 function apiReq(endpoint, arg) {
 	if (arg == null)
